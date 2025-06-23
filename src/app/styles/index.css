@@ -1,13 +1,13 @@
 :root {
-    --gray: #A5A5A5;
-    --gray-hover: #8C8C8C;
+    --gray: #a5a5a5;
+    --gray-hover: #8c8c8c;
 
     --black: #333333;
     --black-hover: #1f1f1f;
 
-    --orange: #F1A33B;
+    --orange: #f1a33b;
     --orange-hover: #d98c1f;
 
-    --text-primary: #FFFFFF;
+    --text-primary: #ffffff;
     --text-secondary: #000000;
 }

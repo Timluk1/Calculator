@@ -25,17 +25,19 @@ export const useCalc = () => {
             case "percent":
                 handlePercent();
                 break;
-            case (["sum", "subtract", "multiply", "divide"].includes(calcEvent) ? calcEvent : ""):
+            case ["sum", "subtract", "multiply", "divide"].includes(calcEvent)
+                ? calcEvent
+                : "":
                 handleOperator(calcEvent);
                 break;
             case "equal":
                 calculate();
                 break;
             case "comma":
-                setExpression(prev => prev + ".");
+                setExpression((prev) => prev + ".");
                 break;
             default:
-                setExpression(prev => prev + calcEvent);
+                setExpression((prev) => prev + calcEvent);
                 break;
         }
     };
@@ -46,7 +48,7 @@ export const useCalc = () => {
 
         try {
             if (/[+\-*/]$/.test(expression)) {
-                setExpression(prev => prev.slice(0, -1) + symbol);
+                setExpression((prev) => prev.slice(0, -1) + symbol);
                 return;
             }
 
@@ -64,7 +66,6 @@ export const useCalc = () => {
         }
     };
 
-
     // подсчитываем результат
     const calculate = () => {
         try {
@@ -75,7 +76,6 @@ export const useCalc = () => {
             setResult("Error");
         }
     };
-
 
     // меняем знак числа
     const toggleSign = () => {
@@ -106,6 +106,6 @@ export const useCalc = () => {
     return {
         expression,
         result,
-        handleClick
-    }
-}
+        handleClick,
+    };
+};

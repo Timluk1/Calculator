@@ -1,15 +1,21 @@
 import type { PropsWithChildren } from "react";
-import cn from "classnames"
-import styles from "./Button.module.css"
+import cn from "classnames";
+import styles from "./Button.module.css";
 
-interface IButtonProps extends PropsWithChildren{
+interface IButtonProps extends PropsWithChildren {
     variant: "gray" | "orange" | "black";
     calcEvent: string;
     onClick: (calcEvent: string) => void;
     isBig?: boolean;
 }
 
-export const Button: React.FC<IButtonProps> = ({ children, calcEvent, variant = "gray", onClick, isBig }) => {
+export const Button: React.FC<IButtonProps> = ({
+    children,
+    calcEvent,
+    variant = "gray",
+    onClick,
+    isBig,
+}) => {
     return (
         <button
             className={cn(styles.button, styles[variant], isBig && styles.big)}
@@ -17,5 +23,5 @@ export const Button: React.FC<IButtonProps> = ({ children, calcEvent, variant = 
         >
             {children}
         </button>
-    )
-}
+    );
+};

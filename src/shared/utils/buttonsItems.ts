@@ -1,4 +1,9 @@
-export const buttonItems: { label: string, variant: "gray" | "orange" | "black", calcEvent: string, isBig?: boolean}[] = [
+export const buttonItems: {
+    label: string;
+    variant: "gray" | "orange" | "black";
+    calcEvent: string;
+    isBig?: boolean;
+}[] = [
     // 1 ряд
     { label: "AC", variant: "gray", calcEvent: "clear" },
     { label: "+/-", variant: "gray", calcEvent: "toggle-sign" },
@@ -28,4 +33,3 @@ export const buttonItems: { label: string, variant: "gray" | "orange" | "black",
     { label: ",", variant: "black", calcEvent: "comma" },
     { label: "=", variant: "orange", calcEvent: "equal" },
 ];
-  

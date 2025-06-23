@@ -9,9 +9,7 @@ export const App = () => {
     return (
         <div className={styles.app}>
             <div className={styles.calculator}>
-                <div className={styles.display}>
-                    {expression || result}
-                </div>
+                <div className={styles.display}>{expression || result}</div>
                 <div className={styles.buttons}>
                     {buttonItems.map((item, index) => (
                         <Button
