@@ -1,0 +1,13 @@
+:root {
+    --gray: #A5A5A5;
+    --gray-hover: #8C8C8C;
+
+    --black: #333333;
+    --black-hover: #1f1f1f;
+
+    --orange: #F1A33B;
+    --orange-hover: #d98c1f;
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #000000;
+}
