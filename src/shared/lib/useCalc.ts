@@ -1,5 +1,5 @@
 import { evaluate } from "mathjs";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const operatorMap: Record<string, string> = {
     sum: "+",
@@ -15,11 +15,11 @@ export const useCalc = () => {
     const setError = () => {
         setResult("Error");
         setExpression("");
-    }
+    };
 
     const isValidResult = (value: number) => {
-        return  !isNaN(value) && isFinite(value);
-    }
+        return !isNaN(value) && isFinite(value);
+    };
 
     // callbck для кнопок калькулятора
     const handleClick = (calcEvent: string) => {
