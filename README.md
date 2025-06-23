@@ -12,23 +12,27 @@
 ## Описание
 
 Приложение-калькулятор с адаптивной версткой
+
 ## Как запустить проект
 
 1. Клонируйте репозиторий:
-   ```sh
-   git clone https://github.com/Timluk1/Сalculator.git
-   cd Сalculator
-   ```
+
+    ```sh
+    git clone https://github.com/Timluk1/Сalculator.git
+    cd Сalculator
+    ```
 
 2. Установите зависимости:
-   ```sh
-   npm install
-   ```
+
+    ```sh
+    npm install
+    ```
 
 3. Запустите проект в режиме разработки:
-   ```sh
-   npm run dev
-   ```
+
+    ```sh
+    npm run dev
+    ```
 
 4. Откройте [http://localhost:5173](http://localhost:5173) в браузере.
 
